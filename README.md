@@ -47,3 +47,16 @@ Integrar com as seguintes Clouds
 - Permitir configurar credenciais, senhas, tokens e similares em cofres seguros e serem consumidos pelas **PowerPipes Images**
 - Api para consumo de informações sobre ambientes.
 
+### Plugins
+
+- Permitir de forma padronizada de o cliente criar e plugar serviços externos nas pipelines (Golden Images)
+  - Todo plugin deve ter documentação de Arquitetura (README.md) e para o Cliente (Docs)
+  - Todo plugin deve gerar dados/métricas sobre o mesmo e ter um canal comum para publica-los através do serviço de pipelines
+  - Todo plugin deve respeitar as regras de ambientes
+- A plataforma deverá fornecer uma estrutura de APIs para conectar plugins externos
+  - Todo plugin que for consumir senha, credencial, token ou informação de acesso a qualquer ferramenta de terceiros deve acontecer de forma segura e com contratos bem estabelecidos
+  - Todo trafego de dados dos plugins devem acontecer de forma criptografada
+- API para gerar dados de plugins
+- API de consulta de os dados gerados por outros plugins da plataforma, podendo assim criar integraçao entre os plugins.
+  - Somente dados do mesmo cliente podem ser consultados e do repositório da pipeline onde o plugin esta sendo executado
+  - Todo trafego de dados dos plugins devem acontecer de forma criptografado
