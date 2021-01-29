@@ -22,10 +22,12 @@ Requisitos:
 
 ### Executores de Pipelines e Jobs
 
-- Capacidade de usar Docker Images como executar de jobs das pipelines
-- Permitir integrar com serviços externos através de Imagens Docker
+- Utilizar estrutura de Pipes do SCM.
+- Capacidade de usar Docker Images como executar de jobs das pipelines.
+- Permitir integrar com serviços externos através de Imagens Docker.
 - Catalogar as Imagens Docker que forem criadas pelas comunidades e serão chamadas de **PowerPipes Images**. 
   Essas imagens devem seguir um conjunto de regras de implementaçoes e utilizar a SDK do PowerPipes.
+- SDK do PowerPipes para padronizar e agilizar integração com APIs.
 
 ## Clouds e Ferramentas similares
 
