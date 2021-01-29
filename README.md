@@ -2,11 +2,11 @@
 
 # Source Code Management Integration
 
-[x] Gitlab
-[] Github
-[] Aws CodeCommit
-[] Azure VSTS
-[] BitBucket
+- [x] Gitlab
+- [ ] Github
+- [ ] Aws CodeCommit
+- [ ] Azure VSTS
+- [ ] BitBucket
 
 Requisitos:
 - Ser um repositório GIT
