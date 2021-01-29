@@ -45,7 +45,21 @@ Integrar com as seguintes Clouds
 - Permitir configurar ambientes obrigatórios por estratégia de git (branches, tags, etc ..)
 - Permitir configurar ambientes produtivos e nao produtivos, de maneira a utiliza-los na SDK pelas **PowerPipes Images**
 - Permitir configurar credenciais, senhas, tokens e similares em cofres seguros e serem consumidos pelas **PowerPipes Images**
+- Api para armazenar cache das **PowerPipes Images**.
 - Api para consumo de informações sobre ambientes.
+
+### Metricas e Dados
+
+Apresentar dados sobre:
+
+- [ ] Acelerate Devops
+- [ ] DORA
+- [ ] Perfornace de Pipelines
+- [ ] Dados detalhados de repositórios
+- [ ] Dados detalhados de deploys
+- [ ] Dados detalhados de LeadTime
+- [ ] Dados detalhados qualidade de software
+- [ ] Dados detalhados segurança de software
 
 ### Plugins
 
@@ -60,3 +74,64 @@ Integrar com as seguintes Clouds
 - API de consulta de os dados gerados por outros plugins da plataforma, podendo assim criar integraçao entre os plugins.
   - Somente dados do mesmo cliente podem ser consultados e do repositório da pipeline onde o plugin esta sendo executado
   - Todo trafego de dados dos plugins devem acontecer de forma criptografado
+
+### CI
+
+Considerado CI os seguintes jobs da pipeline:
+
+- Lint
+- Build
+- Unit Test
+
+Suporte e scripts pré-definidos para as seguintes linguagens
+
+- [ ] Java: 6,7,8,11,13,14,15
+  - gradle
+  - maven
+- [ ] Python: 2,3.x
+- [ ] NodeJS: 4,10
+- [ ] Kotlin
+- [ ] .NetCore 2,3
+- [ ] .NetFramework 4.5, 4.7, 4.8
+- [ ] .Net 5
+- [ ] Ruby
+  - [ ] Rails
+  - [ ] Sinatra
+- [ ] C++
+- [ ] C#
+
+### PowerPipes Images pré-definidas
+
+#### SAST
+
+- [ ] SonarQube
+- TODO: Definir opensources por tecnolgia/linguagen
+
+#### DAST
+
+- TODO: Definir opensources por tecnolgia/linguagen
+- TODO: Definir privador por tecnolgia/linguagen
+
+#### PUBLISH
+
+- [ ] Nexus
+- [ ] JFrog Artifactory
+
+#### CD
+
+- [ ] Kubernetes
+- [ ] AWS Services
+  - [ ] Lambda
+  - [ ] ApiGateway
+  - [ ] ECS
+  - [ ] Beanstalk
+  - [ ] S3
+
+> TODO: Definir estratégias de deploy para as imagens pré definidas
+  
+#### Infra as Code
+
+- [ ] Terraform
+- [ ] Chef Privisioner
+- [ ] Ansible
+- [ ] SaltStack
